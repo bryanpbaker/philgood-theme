@@ -1,0 +1,15 @@
+/********************
+Variables
+********************/
+/*
+Colors
+*/
+/********************
+Global Styles 
+********************/
+.page_item a:hover, .page_item a:focus, .page_item a:active {
+  background: #555555;
+  color: white !important;
+}
+
+/*# sourceMappingURL=main.css.map */

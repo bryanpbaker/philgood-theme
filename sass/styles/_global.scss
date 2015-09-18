@@ -1,0 +1,12 @@
+/********************
+Global Styles 
+********************/
+
+.page_item{
+	a{
+		&:hover, &:focus, &:active{
+			background: $lightGray;
+			color: white !important;
+		}
+	}
+}
