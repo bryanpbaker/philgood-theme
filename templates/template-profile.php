@@ -58,13 +58,6 @@ get_header(); ?>
 					<?php edit_post_link( __( 'Edit', 'show-tell' ), '<span class="edit-link">', '</span>' ); ?>
 				</article><!-- #post-## -->
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->

@@ -22,6 +22,10 @@ body {
   color: white !important;
 }
 
+.header-social-icons li a:hover span {
+  color: pink !important;
+}
+
 /********************
 Home Page Styles 
 ********************/

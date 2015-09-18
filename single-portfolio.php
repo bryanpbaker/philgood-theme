@@ -116,7 +116,7 @@ get_header(); ?>
 
 			</div><!-- .entry-content -->
 
-			<?php knacc_share_post(); ?>
+			<?php /* knacc_share_post(); */ ?>
 
 			</article><!-- .entry-meta -->
 
