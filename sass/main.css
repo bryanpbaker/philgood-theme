@@ -7,9 +7,56 @@ Colors
 /********************
 Global Styles 
 ********************/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .page_item a:hover, .page_item a:focus, .page_item a:active {
   background: #555555;
   color: white !important;
+}
+
+/********************
+Home Page Styles 
+********************/
+.home .site {
+  height: 100%;
+  width: 100%;
+}
+.home .site .site-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.home .site .site-wrapper .site-content {
+  height: 100%;
+  width: 100%;
+}
+.home .site .site-wrapper .site-content .content-area {
+  height: 100%;
+  width: 100%;
+}
+.home .site .site-wrapper .site-content .content-area .site-main {
+  height: 100%;
+  width: 100%;
+}
+.home .site-header {
+  display: none;
+}
+.home .site-footer {
+  display: none;
+}
+.home .full-screen-video {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

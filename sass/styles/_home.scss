@@ -1,0 +1,45 @@
+/********************
+Home Page Styles 
+********************/
+
+.home{
+	.site{
+		height: 100%;
+		width: 100%;
+
+		.site-wrapper{
+			height: 100%;
+			width: 100%;
+
+			.site-content{
+				height: 100%;
+				width: 100%;				
+
+				.content-area{
+					height: 100%;
+					width: 100%;
+
+					.site-main{
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.site-header{
+		display: none;
+	}
+	.site-footer{
+		display: none;
+	}
+
+	.full-screen-video{
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		height: 100%;
+		width: 100%;
+	}
+}

@@ -8,22 +8,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
-			<?php 
-			while ( have_posts() ) : the_post();
-
-			$slider_alias = get_field('home_slider_alias');
-			if ($slider_alias):
-				echo do_shortcode("[rev_slider $slider_alias]");
-			endif;
-
-			if (get_the_content()):
-				get_template_part( 'content', 'page' );
-			endif;
-
-			endwhile; // end of the loop. ?>
+			<div class="full-screen-video">
+				<video class="covervid-video" autoplay loop>
+					<source src="<?php the_field('video') ?>" type="video/mp4">
+				</video>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<script type="text/javascript">
+		$('.full-screen-video').coverVid(1280, 720);
+	</script>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
