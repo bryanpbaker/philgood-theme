@@ -4,6 +4,9 @@
  */
 
 get_header(); ?>
+<div class="hero-image">
+	<img src="<?php the_field('hero_image'); ?>" alt="">
+</div>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

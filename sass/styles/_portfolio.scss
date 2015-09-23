@@ -1,0 +1,11 @@
+/********************
+Portfolio Page Styles 
+********************/
+
+.page-template-template-portfolio{
+	.entry-header{
+		&::after{
+			display: none;
+		}
+	}
+}

@@ -63,4 +63,18 @@ Home Page Styles
   width: 100%;
 }
 
+/********************
+Portfolio Page Styles 
+********************/
+.page-template-template-portfolio .entry-header::after {
+  display: none;
+}
+
+/***************************
+About Philgood Page Styles 
+****************************/
+.page-template-template-profile .hero-image img {
+  width: 100% !important;
+}
+
 /*# sourceMappingURL=main.css.map */
