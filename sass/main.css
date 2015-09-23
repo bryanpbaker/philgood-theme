@@ -76,5 +76,14 @@ About Philgood Page Styles
 .page-template-template-profile .hero-image img {
   width: 100% !important;
 }
+.page-template-template-profile .site-content {
+  width: 100%;
+}
+.page-template-template-profile .site-content .profile-info {
+  color: black !important;
+}
+.page-template-template-profile .site-content .profile-lead {
+  background: #ccc !important;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -8,4 +8,15 @@ About Philgood Page Styles
 			width: 100% !important;
 		}
 	}
+
+	.site-content{
+		width: 100%;
+
+		.profile-info{
+			color: black !important;
+		}
+		.profile-lead{
+			background: #ccc !important;
+		}
+	}
 }
