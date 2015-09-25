@@ -8,11 +8,20 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
-			<div class="full-screen-video">
-				<video class="covervid-video" autoplay loop>
-					<source src="<?php the_field('video') ?>" type="video/mp4">
-				</video>
-			</div>
+			<?php if(is_page('home')) : ?>
+				<div class="full-screen-video">
+					<video class="covervid-video" style="height: 100%;" autoplay loop>
+						<source src="<?php the_field('video') ?>" type="video/mp4">
+					</video>
+				</div>
+			<?php endif; ?>
+
+			<?php if(is_page('photography-2' || 'resume' || 'travel-films')) : ?>
+				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+			<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

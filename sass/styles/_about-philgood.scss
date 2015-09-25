@@ -19,4 +19,12 @@ About Philgood Page Styles
 			background: #ccc !important;
 		}
 	}
+
+	.profile-details{
+		min-height: 150px;
+
+		.profile-info{
+			top: 20%;
+		}
+	}
 }

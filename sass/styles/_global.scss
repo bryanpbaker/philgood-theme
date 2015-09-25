@@ -26,9 +26,15 @@ body{
 		a{
 			&:hover{
 				span{
-					color: pink !important;
+					color: $pink !important;
 				}
 			}
 		}
+	}
+}
+
+.submit, .wpcf7-submit{
+	&:hover{
+		background: $pink !important;
 	}
 }

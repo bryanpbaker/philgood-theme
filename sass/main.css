@@ -23,7 +23,11 @@ body {
 }
 
 .header-social-icons li a:hover span {
-  color: pink !important;
+  color: #f46161 !important;
+}
+
+.submit:hover, .wpcf7-submit:hover {
+  background: #f46161 !important;
 }
 
 /********************
@@ -47,6 +51,7 @@ Home Page Styles
 }
 .home .site .site-wrapper .site-content .content-area .site-main {
   height: 100%;
+  overflow: hidden !important;
   width: 100%;
 }
 .home .site-header {
@@ -84,6 +89,12 @@ About Philgood Page Styles
 }
 .page-template-template-profile .site-content .profile-lead {
   background: #ccc !important;
+}
+.page-template-template-profile .profile-details {
+  min-height: 150px;
+}
+.page-template-template-profile .profile-details .profile-info {
+  top: 20%;
 }
 
 /*# sourceMappingURL=main.css.map */

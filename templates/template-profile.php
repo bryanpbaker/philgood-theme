@@ -16,13 +16,13 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="profile-header">
 						<div class="profile-details" style="background-image: url('<?php if (has_post_thumbnail(get_the_ID())) echo knacc_get_thumbnail_image_url(get_the_ID()); ?>')">
-							<figure class="profile-image">
+							<!-- <figure class="profile-image">
 								<?php 
 								if (get_field('profile_image')): ?>
 									<img src="<?php the_field('profile_image')?>" alt="Profile Image">
 								<?php 
 								endif; ?>
-							</figure>
+							</figure> -->
 							<div class="profile-info">
 								<h1 class="profile-name">
 									<?php the_field('profile_name'); ?>

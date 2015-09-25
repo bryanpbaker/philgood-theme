@@ -34,7 +34,80 @@ get_header(); ?>
       						position: myLatlng,
       						map: map,
   						});
+  						map.set('styles', [
+						  {
+						    "featureType": "administrative",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      { "visibility": "simplified" },
+						      { "color": "#ffffff" }
+						    ]
+						  },{
+						    "featureType": "landscape.man_made",
+						    "elementType": "geometry.fill",
+						    "stylers": [
+						      { "color": "#cccccc" }
+						    ]
+						  },{
+						    "featureType": "road.highway",
+						    "elementType": "geometry.fill",
+						    "stylers": [
+						      { "visibility": "on" },
+						      { "color": "#41acab" }
+						    ]
+						  },{
+						    "featureType": "road.arterial",
+						    "stylers": [
+						      { "visibility": "simplified" },
+						      { "color": "#dddddd" }
+						    ]
+						  },{
+						    "featureType": "poi",
+						    "elementType": "geometry",
+						    "stylers": [
+						      { "color": "#aaaaaa" }
+						    ]
+						  },{
+						    "featureType": "road.local",
+						    "stylers": [
+						      { "visibility": "simplified" },
+						      { "color": "#dddddd" }
+						    ]
+						  },{
+						    "featureType": "road.arterial",
+						    "stylers": [
+						      { "color": "#aaaaaa" }
+						    ]
+						  },{
+						  },{
+						    "featureType": "road.highway",
+						    "elementType": "geometry",
+						    "stylers": [
+						      { "color": "#41acab" }
+						    ]
+						  },{
+						    "featureType": "transit.line",
+						    "elementType": "geometry",
+						    "stylers": [
+						      { "color": "#f46161" }
+						    ]
+						  },{
+						    "featureType": "poi",
+						    "elementType": "geometry",
+						    "stylers": [
+						      { "color": "#bbbbbb" }
+						    ]
+						  },{
+						    "featureType": "water",
+						    "elementType": "geometry",
+						    "stylers": [
+						      { "color": "#f46161" }
+						    ]
+						  },{
+						  }
+						]);
 					}
+
 	
 					google.maps.event.addDomListener(window, 'load', initialize);
         		</script>

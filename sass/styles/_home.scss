@@ -21,6 +21,7 @@ Home Page Styles
 
 					.site-main{
 						height: 100%;
+						overflow: hidden !important;
 						width: 100%;
 					}
 				}
@@ -41,5 +42,9 @@ Home Page Styles
 		background-size: cover !important;
 		height: 100%;
 		width: 100%;
+
+		.covervid-video{
+			
+		}
 	}
 }
