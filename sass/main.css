@@ -97,4 +97,23 @@ About Philgood Page Styles
   top: 20%;
 }
 
+/**********************
+Contact Page Styles
+**********************/
+.contact-social-icons {
+  margin-left: -25px;
+  padding-top: 25px;
+}
+.contact-social-icons ul li {
+  display: inline-block;
+  font-size: 35px;
+  width: 20%;
+}
+.contact-social-icons ul li a {
+  color: #555555;
+}
+.contact-social-icons ul li a:hover {
+  color: #f46161;
+}
+
 /*# sourceMappingURL=main.css.map */

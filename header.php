@@ -134,7 +134,9 @@
 				</h1>
 	
 				<ul class="header-social-icons">
-					<?php knacc_output_social_networks(); ?>
+					<?php if(!is_page('33-2')) : ?>
+						<?php knacc_output_social_networks(); ?>
+					<?php endif; ?>
 				</ul>	
 			</div>
 		</header><!-- #masthead -->

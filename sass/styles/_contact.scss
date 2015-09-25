@@ -1,0 +1,24 @@
+/**********************
+Contact Page Styles
+**********************/
+
+.contact-social-icons{
+	margin-left: -25px;
+	padding-top: 25px;
+
+	ul{
+		li{
+			display: inline-block;
+			font-size: 35px;
+			width: 20%;
+
+			a{
+				color: $lightGray;
+
+				&:hover{
+					color: $pink;
+				}
+			}
+		}
+	}
+}

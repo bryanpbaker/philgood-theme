@@ -168,6 +168,11 @@ get_header(); ?>
 							</li>
 						<?php endif; ?>
 						</ul>
+						<div class="contact-social-icons">
+							<ul>
+								<?php knacc_output_social_networks(); ?>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
