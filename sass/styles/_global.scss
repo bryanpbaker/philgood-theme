@@ -12,6 +12,25 @@ body{
 	width: 100%;
 }
 
+.logo{
+	cursor: pointer;
+	position: relative;
+
+	.logo-overlay{
+		background: transparent;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		transition: all .05s ease-in-out;
+		top: 0;
+		width: 100%;
+
+		&:hover{
+			background: rgba(255,255,255, .15);
+		}
+	}
+}
+
 .page_item{
 	a{
 		&:hover, &:focus, &:active{

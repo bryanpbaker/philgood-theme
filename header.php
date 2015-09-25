@@ -26,6 +26,7 @@
 	<nav id="site-navigation" class="main-navigation icons" role="navigation">
 		<div class="site-branding">
 			<div class="logo">
+				<div class="logo-overlay"></div>
 				<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>" rel="home">
 					<?php 
 					if (get_field('site_logo', 'option')):
