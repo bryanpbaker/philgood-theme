@@ -17,7 +17,7 @@ if ( ! function_exists( 'knacc_setup' ) ) :
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
+ * runs before the init hook. The init hook is too late for some features, such 
  * as indicating support for post thumbnails.
  */
 function knacc_setup() {
@@ -320,6 +320,45 @@ function create_portfolio_post_type() {
 	);
 
 	add_post_type_support( 'portfolio', 'post-formats', array( 'image', 'video', 'link', 'audio' ) );
+}
+
+/**
+ * Register travel-films post type
+ */
+add_action( 'init', 'create_travel_films_post_type' );
+function create_travel_films_post_type() {
+
+	// Set the portfolio post type label
+	if (get_field('travel_films_post_type_label', 'option')) {
+		$travel_films_label = get_field('travel_films_post_type_label', 'option');
+	} else {
+		$travel_films_label = 'Travel Films';
+	}
+
+	// Set the portfolio post type slug
+	if (get_field('travel_films_post_type_slug', 'option')) {
+		$travel_films_slug = get_field('travel_films_post_type_slug', 'option');
+	} else {
+		$travel_films_slug = 'travel-films';
+	}
+
+	register_post_type( 'travel-films',
+		array(
+			'labels' => array(
+				'name'			=> __( $travel_films_label ),
+				'singular_name' => __( $travel_films_label )
+			),
+		'public' 		=> true,
+		'has_archive' 	=> false,
+		'menu_position' => 20,
+		'rewrite' => array('slug' => $travel_films_slug),
+		'menu_icon' 	=> 'dashicons-screenoptions',
+		'supports' 		=> array('title', 'thumbnail', 'excerpt'),
+		'taxonomies' 	=> array('travel-films-categories', 'travel-films-tags')
+		)
+	);
+
+	add_post_type_support( 'travel-films', 'post-formats', array( 'image', 'video', 'link', 'audio' ) );
 }
 
 /**
