@@ -13,6 +13,7 @@ get_header(); ?>
 					<video class="covervid-video" style="height: 100%;" autoplay loop>
 						<source src="<?php the_field('video') ?>" type="video/mp4">
 					</video>
+					<img src="<?php the_field('logo'); ?>" alt="" class="center-logo">
 				</div>
 			<?php endif; ?>
 

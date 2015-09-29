@@ -31,7 +31,7 @@
 					<?php 
 					if (get_field('site_logo', 'option')):
 						$logo = get_field('site_logo', 'option'); ?>
-						<img src="<?php echo $logo['url']; ?>" alt="<?php bloginfo( 'name' ); ?>">
+						<img src="<?php echo $logo['url']; ?>" alt="<?php bloginfo( 'name' ); ?>" loop="infinite">
 					<?php 
 					else: ?>
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-logo.png" alt="<?php bloginfo( 'name' ); ?>">

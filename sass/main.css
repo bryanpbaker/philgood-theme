@@ -86,7 +86,22 @@ Home Page Styles
   background-repeat: no-repeat !important;
   background-size: cover !important;
   height: 100%;
+  position: relative;
   width: 100%;
+}
+.home .full-screen-video .center-logo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .home .full-screen-video .center-logo {
+    width: 80%;
+  }
 }
 
 /********************
