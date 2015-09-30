@@ -16,7 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/sass/main.min.css">
+<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/sass/main.min.css"> -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,8 +26,8 @@
 	<nav id="site-navigation" class="main-navigation icons" role="navigation">
 		<div class="site-branding">
 			<div class="logo">
-				<div class="logo-overlay"></div>
-				<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>" rel="home">
+				<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" rel="home">
+					<div class="logo-overlay"></div>
 					<?php 
 					if (get_field('site_logo', 'option')):
 						$logo = get_field('site_logo', 'option'); ?>

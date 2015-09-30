@@ -57,6 +57,8 @@ body{
 }
 
 .submit, .wpcf7-submit{
+	color: #444 !important;
+
 	&:hover{
 		background: $pink !important;
 	}

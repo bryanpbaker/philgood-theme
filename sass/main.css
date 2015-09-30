@@ -47,6 +47,9 @@ body {
   color: #f46161 !important;
 }
 
+.submit, .wpcf7-submit {
+  color: #444 !important;
+}
 .submit:hover, .wpcf7-submit:hover {
   background: #f46161 !important;
 }
@@ -89,18 +92,19 @@ Home Page Styles
   position: relative;
   width: 100%;
 }
-.home .full-screen-video .center-logo {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  z-index: 999;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+.home-center-logo {
+  left: 50% !important;
+  position: absolute !important;
+  top: 50% !important;
+  z-index: 999 !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
 }
 @media (max-width: 767px) {
-  .home .full-screen-video .center-logo {
-    width: 80%;
+  .home-center-logo {
+    width: 80% !important;
   }
 }
 
@@ -124,7 +128,7 @@ About Philgood Page Styles
   color: black !important;
 }
 .page-template-template-profile .site-content .profile-lead {
-  background: #ccc !important;
+  background: #999 !important;
 }
 .page-template-template-profile .profile-details {
   min-height: 150px;

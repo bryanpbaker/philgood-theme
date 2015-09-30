@@ -47,20 +47,19 @@ Home Page Styles
 		.covervid-video{
 			
 		}
-
-		.center-logo{
-			left: 50%;
-			position: absolute;
-			top: 50%;
-			z-index: 999;
-			-webkit-transform: translate(-50%,-50%);
-	    	-ms-transform: translate(-50%,-50%);
-	    	-moz-transform: translate(-50%, -50%);
-	        transform: translate(-50%,-50%);
-
-	        @media(max-width: 767px){
-	        	width: 80%;
-	        }
-		}
 	}
+}
+
+.home-center-logo{
+	left: 50% !important;
+	position: absolute !important;
+	top: 50% !important;
+	z-index: 999 !important;
+	-webkit-transform: translate(-50%,-50%) !important;
+	-ms-transform: translate(-50%,-50%) !important;
+    transform: translate(-50%,-50%) !important;
+
+    @media(max-width: 767px){
+    	width: 80% !important;
+    }
 }
