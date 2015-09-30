@@ -339,7 +339,7 @@ function create_portfolio_post_type() {
 add_action( 'init', 'create_travel_films_post_type' );
 function create_travel_films_post_type() {
 
-	// Set the portfolio post type label
+	// Set the Travel Films post type label
 	if (get_field('travel_films_post_type_label', 'option')) {
 		$travel_films_label = get_field('travel_films_post_type_label', 'option');
 	} else {
@@ -364,7 +364,7 @@ function create_travel_films_post_type() {
 		'menu_position' => 20,
 		'rewrite' => array('slug' => $travel_films_slug),
 		'menu_icon' 	=> 'dashicons-screenoptions',
-		'supports' 		=> array('title', 'thumbnail', 'excerpt'),
+		'supports' 		=> array('title', 'thumbnail', 'editor'),
 		'taxonomies' 	=> array('travel-films-categories', 'travel-films-tags')
 		)
 	);

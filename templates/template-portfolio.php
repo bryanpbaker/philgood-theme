@@ -298,7 +298,7 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>" <?php if ($thumbnail_margin) echo 'style="margin: 0 ' . $thumbnail_margin .  'px ' . $thumbnail_margin .  'px 0;"'; ?>>
 								<img src="<?php echo $the_image; ?>" alt="<?php the_title(); ?>">
 								<header class="entry-header">
-									<img src="<?php the_field('portfolio_page_rollover_image'); ?>" alt="">
+									<img src="<?php the_field('travel_films_rollover_image'); ?>" alt="">
 									<?php
 									/* 
 									if (get_the_title()): ?>
@@ -327,7 +327,7 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>" <?php if ($thumbnail_margin) echo 'style="margin: 0 ' . $thumbnail_margin .  'px ' . $thumbnail_margin .  'px 0;"'; ?>>
 								<img src="<?php echo $thumbnail_image; ?>" alt="<?php the_title(); ?>">
 								<header class="entry-header">
-									<img src="<?php the_field('portfolio_page_rollover_image'); ?>" alt="">
+									<img src="<?php the_field('travel_films_rollover_image'); ?>" alt="">
 									<?php /*
 									if (get_the_title()): ?>
 										<h1 class="title"><?php the_title(); ?></h1>
@@ -368,7 +368,7 @@ get_header(); ?>
 							<a href="<?php echo $lightbox_image; ?>" data-lightbox="<?php echo $lightbox_image_title; ?>" <?php if ($thumbnail_margin) echo 'style="margin: 0 ' . $thumbnail_margin .  'px ' . $thumbnail_margin .  'px 0;"'; ?>>
 								<img src="<?php echo $image_thumbnail_image; ?>" alt="<?php the_title(); ?>">
 								<header class="entry-header">
-									<img src="<?php the_field('portfolio_page_rollover_image'); ?>" alt="">
+									<img src="<?php the_field('travel_films_rollover_image'); ?>" alt="">
 									<?php 
 									/*
 									if (get_the_title()): ?>
@@ -404,7 +404,7 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>" <?php if ($thumbnail_margin) echo 'style="margin: 0 ' . $thumbnail_margin .  'px ' . $thumbnail_margin .  'px 0;"'; ?>>
 								<img src="<?php echo $thumbnail_image; ?>" alt="<?php the_title(); ?>">
 								<header class="entry-header">
-									<img src="<?php the_field('portfolio_page_rollover_image'); ?>" alt="">
+									<img src="<?php the_field('travel_films_rollover_image'); ?>" alt="">
 									<?php 
 									/*
 									if (get_the_title()): ?>
